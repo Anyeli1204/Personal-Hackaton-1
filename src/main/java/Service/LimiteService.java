@@ -55,4 +55,8 @@ public class LimiteService {
         }
         limiteRepository.deleteById(id);
     }
+    public boolean verificarLimite(String usuarioId) {
+        // Lógica para verificar el límite del usuario
+        return true; // Cambia esto por la lógica adecuada
+    }
 }
