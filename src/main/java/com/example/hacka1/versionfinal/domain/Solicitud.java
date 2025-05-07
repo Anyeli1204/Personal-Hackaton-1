@@ -1,19 +1,20 @@
-package com.example.hacka1.domain;
+package com.example.hacka1.versionfinal.domain;
 
 import jakarta.persistence.*;
 import lombok.Data;
 
-@Data
+
 @Entity
-public class LimiteUsuario {
+@Data
+public class Solicitud {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private String consulta;
+    private String respuesta;
+    private Integer tokensConsumidos;
     private String modelo;
-    private Integer tokensMaximos;
-    private Integer solicitudesMaximas;
-    private Integer ventanaTiempoHoras;
 
     @ManyToOne
     private Usuario usuario;
